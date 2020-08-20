@@ -1,0 +1,20 @@
+.contacts {
+    padding: 15px 0;
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+    
+}
+.contacts__item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+.contacts__title {
+    margin-bottom: 10px;
+}
+.contacts__link {
+    display: block;
+    color: $main-text;
+    text-decoration: none;
+}

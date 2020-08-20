@@ -1,0 +1,19 @@
+.nav {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nav__item {
+
+    &:not(:nth-child(3)) {
+        margin-right: 50px;
+    }
+}
+.nav__link {
+    color: $main-text;
+    display: block;
+    padding: 10px 0;
+}
