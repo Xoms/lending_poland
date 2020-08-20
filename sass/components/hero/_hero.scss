@@ -2,8 +2,8 @@
     position: relative;
     width: 100%;
     height: 600px;
-    background-image: url('./img/hero-bg.jpg'),
-        linear-gradient(rgba(255, 255, 255, 0.3));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8)),
+        url(../img/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -21,6 +21,7 @@
 .hero__title {
     margin-bottom: 50px;
     font-size: 32px;
+    color: white;
 }
 .hero__button {
     padding: 15px 20px;
@@ -33,7 +34,9 @@
     background-color: $accent;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 32px;
-
+    font-size: 28px;
+    &:hover{
+        cursor: pointer;
+    }
 }
 

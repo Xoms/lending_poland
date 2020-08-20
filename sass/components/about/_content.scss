@@ -1,0 +1,14 @@
+.content{
+    display: flex;
+    &:before {
+        content:'';
+        width: 40%;
+        height: auto;
+        background-color: black;
+        background-image: url(../img/man.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+        
+}

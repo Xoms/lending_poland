@@ -1,0 +1,13 @@
+.card {
+    @include elements-width(3);
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+.card__meta {
+    &:not(:last-child){
+        margin-bottom: 10px;
+
+        overflow: hidden;
+    }
+}
