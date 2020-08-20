@@ -29,7 +29,7 @@ img {
 }
 
 .section:nth-child(odd) {
-  background-color: #B0B0B0;
+  background-color: #c0c0c0;
 }
 
 .section-title {
@@ -61,6 +61,7 @@ img {
 .logo__link {
   text-decoration: none;
   color: #000;
+  font-weight: bold;
 }
 
 .header__content {
@@ -89,6 +90,7 @@ img {
 
 .contacts__title {
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .contacts__link {
@@ -135,6 +137,7 @@ img {
 
 .contacts__title {
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .contacts__link {
@@ -227,22 +230,57 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .card {
   width: calc((100% - (3 - 1) * 30px) / 3);
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
 }
 
 .card:not(:last-child) {
   margin-right: 30px;
 }
 
-.card__meta:not(:last-child) {
+.card__meta {
+  padding: 15px;
+}
+
+.card__text:not(:last-child) {
   margin-bottom: 10px;
-  overflow: hidden;
 }
 
 .subsection__title {
   margin-bottom: 30px;
+}
+
+.form {
+  width: 450px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__title {
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__input {
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.input-wrap:not(:last-child) {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

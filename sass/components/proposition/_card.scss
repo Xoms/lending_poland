@@ -1,13 +1,22 @@
 .card {
     @include elements-width(3);
+    background-color: $main-bg;
+    color: $main-text;
+
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
     &:not(:last-child){
         margin-right: 30px;
     }
 }
 .card__meta {
+    padding: 15px;
+}
+.card__text {
     &:not(:last-child){
         margin-bottom: 10px;
-
-        overflow: hidden;
     }
 }
