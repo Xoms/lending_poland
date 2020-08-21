@@ -1,6 +1,9 @@
 .content{
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1024px){
+       flex-direction: row;
+    }
     &:before {
         content:'';
         width: 100%;
@@ -13,6 +16,7 @@
         background-size: contain;
         @media screen and (min-width: 1024px){
             width: 40%;
+            height: auto;
         }
     }
         
