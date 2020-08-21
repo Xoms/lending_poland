@@ -1,14 +1,19 @@
 .content{
     display: flex;
+    flex-direction: column;
     &:before {
         content:'';
-        width: 40%;
-        height: auto;
+        width: 100%;
+        height: 300px;
+        display: block;
         background-color: black;
         background-image: url(../img/man.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        @media screen and (min-width: 1024px){
+            width: 40%;
+        }
     }
         
 }
