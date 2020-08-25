@@ -1,9 +1,18 @@
 .header__content {
-    
+    padding-bottom: 10px;
     @media screen and (min-width: 1024px){
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
     }
+}
 
+.header__top {
+    max-width: 450px;
+    text-align: center;
+    @media screen and (min-width: 1024px){
+        display: flex;
+        max-width: 100%;
+        justify-content: space-evenly;
+
+    }
 }
