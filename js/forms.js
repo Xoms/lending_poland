@@ -43,7 +43,7 @@ $(document).ready(function () {
                         .done(function (data) {
                             form[0].reset();
                             form.find(btn).attr("disabled", false);
-							fbq('track', 'Lead'); // события ‘лид’ в Фейсбуке
+							//fbq('track', 'Lead'); // события ‘лид’ в Фейсбуке
                             alert('Ваша заявка отправлена');
                         })
 

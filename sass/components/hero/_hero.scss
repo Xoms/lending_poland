@@ -25,10 +25,17 @@
     }
 }
 .hero__title {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 32px;
     color: white;
+}
+.hero__text {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
 }
 .hero__button {
     padding: 15px 20px;
