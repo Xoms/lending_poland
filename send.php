@@ -2,9 +2,9 @@
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$recepient = "visa365poland@gmail.com";
-	$sitename = "";
-	$from_name  = "Форма ";
-	$from_email = "";
+	$sitename = "voditel365.online";
+	$from_name  = "Форма voditel365.online";
+	$from_email = "visa365poland@gmail.com";
 
 	$email_headers = "Return-Path: <" . $from_email . ">\r\n";
 	$email_headers .= "From: " . $from_name . " <" . $from_email . ">\r\n";
@@ -37,9 +37,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	if($response){
 		// Set a 200 (okay) response code.
 		
-		file_put_contents('leads/'.date('d-m-Y').'.txt', $_POST['name'].':'.$_POST['phone'].':'.$_POST['email']."\n", FILE_APPEND | LOCK_EX);
+		//file_put_contents('leads/'.date('d-m-Y').'.txt', $_POST['name'].':'.$_POST['phone'].':'.$_POST['email']."\n", FILE_APPEND | LOCK_EX);
 		
-		transferPost(); // передать пост в CRM
+		//transferPost(); // передать пост в CRM
 	  http_response_code(200);
 	  echo json_encode("Thank You! Your message has been sent.");
 	}

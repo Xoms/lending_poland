@@ -12,12 +12,10 @@ $(document).ready(function () {
 					
         let inputNameValue = $("#name-input-1").val();
         let inputPhoneValue = $("#phone-input-1").val();
-        let inputEmailValue = $("#email-input-1").val();
+        //let inputEmailValue = $("#email-input-1").val();
 
-        console.log('work')
-        console.log(inputPhoneValue.length);
 
-        let user = `Имя: ${inputNameValue}; Телефон: ${inputPhoneValue}; Email: ${inputEmailValue};`;
+        let user = `Имя: ${inputNameValue}; Телефон: ${inputPhoneValue};`; //Email: ${inputEmailValue};
 
         if (inputNameValue != "" && inputPhoneValue != "" && inputPhoneValue.length >= 10) {
             if (inputEmailValue == "" || inputEmailValue.indexOf("@") != -1) {
@@ -25,10 +23,6 @@ $(document).ready(function () {
 
                 currentUser.user = user;
                 userNumber.number = inputPhoneValue;
-
-
-
-
 
                     $.ajax({
                         type: "POST",
